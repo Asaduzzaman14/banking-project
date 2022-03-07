@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl mt-4 text-center">Let's get some <span class="text-red-400">mooooney!!!</span></h1>
+    <main class="w-3/4  w-3/4 mx-auto">
+        <section class="mt-4 text-white">
+            <div class="grid grid-cols-3 grid-flow-col gap-4 ">
+                <div class="bg-green-400 p-6 rounded ">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-3xl">$<span id="deposit-total">00</span> </h4>
+                </div>
+                <div class="bg-red-400 p-6 rounded ">
+                    <h3 class="text-2xl">Withdrow</h3>
+                    <h4 class="text-3xl">$<span id="total-withdrow">00</span> </h4>
+                </div>
+                <div class="bg-emerald-300 p-6 rounded ">
+                    <h3 class="text-2xl">Blance</h3>
+                    <h4 class="text-3xl">$<span id="previus-balnce">1200</span> </h4>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="grid grid-cols-2 gap-3">
+                <div class=" bg-amber-200 p-5 rounded">
+
+                    <h3 class="mb-3 text-centers text-2xl">please Deposite</h3>
+
+                    <input id="deposite-input" class="border-2 border-gray-200 rounded block mb-2  center pl-2 w-3/4"
+                        type="" placeholder="$ Amount you want to deposite">
+
+                    <button id="deposit-btn" class="bg-green-400 px-5 py-2 rounded text-white font-semibold mt-2">
+                        Deposit</button>
+
+                </div>
+                <div class=" bg-amber-300 rounded p-5">
+                    <h3 class="mb-3 text-centers text-2xl">please Withdrow</h3>
+                    <input id="withdrow-input" class="border-2 border-gray-200 rounded block mb-2  center pl-2 w-3/4"
+                        type="" placeholder="$ Amount you want to deposite">
+                    <button id="withdrow-btn" class="bg-green-400 px-5 py-2 rounded text-white font-semibold mt-2">
+                        Withdrow</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="banking.js"></script>
+</body>
+
+</html>
